@@ -1,49 +1,22 @@
 ﻿using System;
 
-namespace CSharpLess
+namespace CSharpArithmeticalMean
 {
     class Program
     {
         static void Main(string[] args)
         {
-             Console.WriteLine("Имя: ");
-              string name = Console.ReadLine();
-              if(name == "Anatoly")
-              {
-                  Console.WriteLine($"Welcome, {name}!");
-              }
-              else if(name == "SexGodBoy")
-              {
-                  Console.WriteLine($"Welcome, {name}!");
-              }
-              else
-              {
-                  Console.WriteLine("This incorrect name!");
-              }
-           
+            string a_s, b_s;
             int a, b;
-            string var, var2;
             Console.WriteLine("Введите два числа: ");
-            var = Console.ReadLine();
-            var2 = Console.ReadLine();
+            a_s = Console.ReadLine();
+            b_s = Console.ReadLine();
 
-            a = Convert.ToInt32(var);
-            b = Convert.ToInt32(var2);
-            Console.WriteLine($"Sum variable: {a + b}");
+            a = Convert.ToInt32(a_s);
+            b = Convert.ToInt32(b_s);
 
-            string var_d = "0.7";
-            Convert.ToDouble(var_d);
-            
-
-           string a_s = "7";
-            string a_s2 = "5";
-            int a1 = int.Parse(a_s);
-            int b1 = int.Parse(a_s2);
-            Console.WriteLine(a + b);
-            Console.ReadLine();
-            
-
-
+            int result = (a + b) / 2;
+            Console.WriteLine($"Result = {result}");
         }
     }
 }
